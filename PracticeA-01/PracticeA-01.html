@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title> 이벤트 핸들러 모두 알아보기</title> </head>
+<body onLoad="alert('문서를 열면 onload!')" onUnload="alert('문서를 닫으면 onunload!')">
+<form onSubmit="alert('폼을 제출합니다.')" onReset="alert('입력양식을 초기화합니다.')">
+<input type="button" value="마우스를 올려보세요" onMouseover="alert('마우스를 올리면 onmouseover')">
+<input type="button" value="마우스를 올렸다가 빠져보세요~" onMouseout="alert('마우스가 빠져나가면 onmouseout')"><p>
+아이디: <input type="text" size=50 value="입력박스 안에 클릭한 다음 배경을 다시 클릭해 보세요"
+onFocus="alert('입력박스에 클릭하면 onfocus')“><p>
+이름: <input type="text" size=50 value="입력박스 안에 클릭한 다음 배경을 다시 클릭해 보세요"
+onBlur="alert('입력박스에서 포커스가 떠나면 onblur')"><p> 
+비밀번호 :<input type="text" size=50
+value="입력박스 안에서 키보드를 입력해 보세요"
+onKeydown="alert('키를 누르면 onkeydown')" ><p>
+입력상자 : <input type=text size=50
+value="입력박스 안에 클릭하면 문자가 사라져요"
+onFocus="this.value='' "
+onBlur="this.value='입력박스 밖을 클릭하면 다시 문자가 나타나요'"><p>
+<input type="button" value="확인"
+onClick="alert('버튼을 클릭하면 click 이벤트 발생')">
+<input type="submit" value="보내기">
+<input type="reset" value="다시쓰기">
+</form>
+</body>
+</html> 
